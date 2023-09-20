@@ -1,0 +1,65 @@
+    <!--網頁標題-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand text-white" href="#">
+        <img src="<?php echo PUBLIC_PATH;?>images/logo.png"/>
+        FUNNY PARK
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--選單-->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link text-white" href="?page=index">首頁</a>
+          <a class="nav-item nav-link text-white" href="?page=login">登入<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link text-light active" href="javascript:void(0);">註冊</a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!--網頁內容-->
+     <form class="form-register" method="POST" action="register/check_register.php" enctype="multipart/form-data">
+
+       <div class="text-center mb-4">
+         <img class="col-sm-12" src="<?php echo PUBLIC_PATH;?>images/login-logo.png" alt="">
+       </div>
+
+       <!--暱稱-->
+       <div class="form-label-group">
+         <input type="text" name="name" id="inputName" class="form-control" placeholder="暱稱" required autofocus>
+         <label for="inputName">暱稱</label>
+       </div>
+
+       <!--會員帳號-->
+       <div class="form-label-group">
+         <input type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" required>
+         <label for="inputEmail">Email address</label>
+       </div>
+
+       <!--會員密碼-->
+       <div class="form-label-group">
+         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="會員密碼" required>
+         <label for="inputPassword">會員密碼</label>
+       </div>
+
+       <!--確認密碼-->
+       <div class="form-label-group">
+         <input type="password" name="check_password" id="inputCheckPassword" class="form-control" placeholder="確認密碼" required>
+         <label for="inputCheckPassword">確認密碼</label>
+       </div>
+
+       <!--會員大頭貼-->
+       <div class="form-label-group">
+         <input type="file" name="photo" id="inputFile" class="form-control" placeholder="會員大頭貼" accept="image/*" required>
+         <label for="inputFile">會員大頭貼</label>
+       </div>
+
+       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+
+       <!--會員權限(預設為一般會員)
+       <input type="hidden" name="authority" value="0">
+       -->
+
+     </form>

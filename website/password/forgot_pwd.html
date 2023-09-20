@@ -1,0 +1,49 @@
+    <!--網頁標題-->
+    <nav>
+      <div class="nav-wrapper">
+    	  <!--網頁上方選單列-->
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a class="brand-logo"><i class="material-icons">vpn_key</i>忘記密碼</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="javascript:void(0);">忘記密碼</a></li>
+            <li><a href="?page=login">回登入</a></li>
+          </ul>
+    	  <!--手機及平板裝置的選單-->
+          <ul class="side-nav" id="mobile-demo">
+            <li class="active"><a href="javascript:void(0);"><i class="material-icons">vpn_key</i>忘記密碼</a></li>
+            <li><a href="?page=login">回登入</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <!--網頁內容-->
+    <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+
+            <!--忘記密碼表單-->
+            <form method="post" action="password/check_forgot_pwd.php">
+
+              <!--會員帳號(email)-->
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input name="username" id="icon_username" type="email" class="validate" required>
+                <label for="icon_username">會員帳號</label>
+              </div>
+
+              <!--送出按鈕-->
+              <div class="login_btn">
+                <button class="btn waves-effect waves-light" type="submit" name="action">
+                    送出
+                </button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

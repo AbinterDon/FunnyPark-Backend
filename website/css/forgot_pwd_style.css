@@ -1,0 +1,43 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+html,body{
+  width:100%;
+}
+
+body {
+  font-family: 'cwTeXYen', sans-serif;/* 網站使用載入的字型 */
+  font-size: 2rem;
+}
+
+.nav-wrapper{
+  background-color: #7986cb;
+}
+
+.reg_btn{
+  text-align: center;
+}
+
+.content .row{
+  margin-bottom:0;
+}
+.content .row .col{
+  margin-top:2em;
+}
+
+.btn{
+  font-size: 1.25rem;
+  background-color: #7986cb;
+}
+
+.btn:hover{
+  background-color: #90caf9;
+}
+.btn:focus{
+  background-color: #1565c0;
+}
+
+.page-footer{
+  background-color: #7986cb;
+}
+.footer-copyright{
+  background-color: #4caf50;
+}

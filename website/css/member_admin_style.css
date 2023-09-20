@@ -1,0 +1,113 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+html,body{
+  width:100%;
+}
+
+body {
+  font-family: 'cwTeXYen', sans-serif;/* 網站使用載入的字型 */
+  /*font-size: 2rem;*/
+}
+
+.content{
+  min-height: 320px;
+  /*font-size: 2rem;*/
+  /*background: url("../images/img01.jpg") no-repeat center top;
+  background-position: fixed;
+  background-size: contain;*/
+}
+
+@media only screen and (min-device-width: 600px)
+{
+  .content{
+    min-height: 720px;
+    margin-right:5em;
+    margin-left:5em;
+    margin-top:6em;
+    margin-bottom:2em;
+    /*background: url("../images/img01.jpg") no-repeat center top;
+    background-position: fixed;
+    background-size: cover;*/
+  }
+}
+
+@media only screen and (max-device-width: 400px)
+{
+  .content{
+    margin-right:2em;
+    margin-left:2em;
+    margin-top:6em;
+    margin-bottom:2em;
+  }
+}
+
+/*button*/
+.btn{
+  margin-top: 2em;
+  font-size: 1.25rem;
+  background-color: #01579b;
+}
+
+.btn:hover{
+  background-color: #0277bd;
+}
+.btn:focus{
+  background-color: #283593;
+}
+
+/*done button*/
+ #done{
+  font-size: 1.25rem;
+  background-color: #43a047;
+}
+
+#done:hover{
+  background-color: #81c784;
+}
+#done:focus{
+  background-color: #2e7d32;
+}
+
+/*cancel button*/
+#cancel{
+  font-size: 1.25rem;
+  background-color: #b71c1c;
+}
+
+#cancel:hover{
+  background-color: #e53935;
+}
+#cancel:focus{
+  background-color: #b71c1c;
+}
+
+#vcancel{
+  font-size: 1.25rem;
+  background-color: #b71c1c;
+}
+
+#vcancel:hover{
+  background-color: #e53935;
+}
+#vcancel:focus{
+  background-color: #b71c1c;
+}
+
+/*radio*/
+[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:before,
+[type="radio"].with-gap:checked+label:after
+{
+	border-color:#1a237e;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:after
+{
+	background-color:#1a237e;
+}
+
+/*table*/
+table
+{
+  font-size: 1.25rem;
+}

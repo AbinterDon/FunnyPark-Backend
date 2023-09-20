@@ -1,0 +1,41 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+html,body{
+  width:100%;
+}
+
+body {
+  font-family: 'cwTeXYen', sans-serif;/* 網站使用載入的字型 */
+}
+
+/*網頁導覽列*/
+nav .navbar-brand{
+  font-size: 1.25rem;
+}
+
+.content{
+  margin-top:6em;
+  margin-bottom:0;
+}
+
+nav{
+  background-color: #01579b;
+}
+
+.navbar-nav {
+  font-size: 1.5rem;
+}
+
+.img-thumbnail{
+  border: 1px solid #505761;
+  border-radius: 10rem;
+}
+
+.card .card-header{
+  font-size: 2em;
+  color:white;
+  background-color:#42a5f5;
+}
+
+.table .thead-light th,.table td{
+  font-size: 1.25em;
+}

@@ -1,0 +1,45 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+html,body{
+  width:100%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'cwTeXYen', sans-serif;/* 網站使用載入的字型 */
+  /*font-size: 2rem;*/
+}
+
+.content{
+  min-height: 320px;
+  flex:1 0 auto;
+/*
+  background: url("../images/img01.jpg") no-repeat center top;
+  background-position: fixed;
+  background-size: contain;*/
+
+}
+
+@media only screen and (min-device-width: 400px)
+{
+  .content{
+    min-height: 480px;
+/*
+    background: url("../images/img01.jpg") no-repeat center top;
+    background-position: fixed;
+    background-size: cover;*/
+  }
+
+  .page-footer p
+  {
+    font-size:1.5rem;
+  }
+}
+
+.content .row{
+  margin-bottom:0;
+}
+.content .row .col{
+  margin-top:4em;
+}
